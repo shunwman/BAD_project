@@ -1,0 +1,319 @@
+/* 
+#DADBCB
+#A1B099
+#84745B
+#DCC69D
+#F8F4E9
+*/
+* {
+
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #5fcf85 3px solid;
+}
+
+#page-title {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 2.5vh; */
+  background-color: #9e8c70;
+}
+
+/* gallery */
+#gallery-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.newImgContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  /* max-width: 300px; */
+  /* width: ;t */
+}
+
+
+
+.gallery-control {
+  flex-grow: 1;
+  min-width: calc(100% / 3);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+  .gallery-control {
+    min-width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .gallery-control {
+    min-width: 100%;
+  }
+}
+
+.gallery-control {
+  display: block;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+#photo {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.gallery-content {
+  position: relative;
+  border-radius: 5%;
+  border: solid 5px darkgreen;
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  background-color: darkgreen;
+  width: 85vw;
+}
+
+.infoBtn {
+  background-color: #70b688;
+  background-image: url(../img/info-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  /* margin-bottom: 1rem; */
+  position: absolute;
+  top: 5px;
+  right: 20px;
+
+}
+
+.infoBtn:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.latestCommentContainer {
+  background-color: #70b688;
+  height: 3rem;
+  padding-bottom: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0px 0px 15px 15px;
+
+}
+
+.latestCommentSubContainer {
+  width: 69%;
+  display: flex;
+  align-items: center;
+}
+
+.latestCommentOfUser {
+  overflow: hidden;
+  margin-right: 1%;
+  padding-top: 0.25rem;
+}
+
+.latestUsername {
+
+  margin-right: 1%;
+  padding-top: 0.25rem;
+}
+
+.commentBtn {
+  /* background-color: cyan; */
+  /* background-size: fit-content; */
+  width: fit-content;
+  /* height: fit-content; */
+  height: 100%;
+}
+
+.commentBtn>img:hover {
+  cursor: pointer;
+  /* background-color: aqua; */
+
+}
+
+.commentBtn>img {
+  width: auto;
+  height: 100%;
+
+  /* background-color: aqua; */
+}
+
+
+.image-comments-container {
+  display: none;
+  /* display: flex; */
+  width: 93%;
+  height: 87%;
+  background-color: #375537;
+  position: fixed;
+  /* top: 1%; */
+  top: 0;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  z-index: 1;
+  color: white;
+
+}
+
+.scientificName {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+
+
+.knowMore {
+  background-color: #5fcf85;
+  /* margin-top: 1rem; */
+}
+
+.closeCommentBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 45px;
+  color: blanchedalmond;
+}
+
+.reportBtn {
+  width: fit-content;
+  height: fit-content;
+  color: red;
+  background-color: white;
+  border-radius: 10%;
+  margin-top: 0.5rem;
+  z-index: 2;
+  /* position: absolute;
+  top: 12rem;
+  right: 4rem; */
+
+}
+
+.reportBtn:hover {
+  cursor: pointer;
+  /* size: 105%; */
+  color: rgb(167, 9, 167);
+
+}
+
+.commented-image-container {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.commented-image {
+  width: auto;
+
+  height: 100%;
+
+}
+
+.username-container {
+  width: 100%;
+  height: fit-content;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  color: black;
+  border-bottom: 1px dotted black;
+
+}
+
+.comment-container {
+  width: 100%;
+  height: fit-content;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  color: black;
+  border-bottom: 1px dotted black;
+
+}
+
+.photoUploader {
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* .commentSectionDiv {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 2%;
+
+} */
+
+
+
+.page-header {
+  padding: 2vh;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  background-color: darkgreen;
+
+}
+
+.Photo-Comments {
+  align-self: flex-start;
+  padding: 5px;
+  border-radius: 6%;
+  display: table-footer-group;
+  font-size: 20px;
+
+}
+
+.commentSectionDiv {
+  width: 100%;
+  height: 65%;
+  background-color: blanchedalmond;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 15px;
+  /* margin-right: 1rem; */
+}
+
+.knowMore {
+  display: none;
+  background-color: #5fcf85;
+  /* margin-top: 1rem; */
+}

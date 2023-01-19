@@ -1,0 +1,133 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+  height: 100%;
+
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/* 
+#DADBCB
+#A1B099
+#84745B
+#DCC69D
+#F8F4E9
+*/
+
+
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #5fcf85 3px solid;
+}
+
+
+.container {
+  background-color: #DCC69D;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: #DCC69D solid 5px;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.fungi-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+}
+
+
+
+.info-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  /* height: 54px; */
+  justify-content: space-evenly;
+  border: #84745B solid 2px;
+  border-radius: 20px;
+ }
+ 
+
+
+ .info-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin: 7px;
+
+ }
+
+.info-content {
+  font-size: 20px;
+  margin: 7px;
+
+}
+
+
+
+
+/* footer */
+
+
+
+
+.row {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.image-content{
+  width: 100%;
+}
+
+
+/* Style the images inside the grid */
+.column-img {
+  display: flow-root;
+  width: 120px;
+  height: 110px;
+  float: left;
+  object-fit: cover;
+  padding: 2.5px;
+}
+
+

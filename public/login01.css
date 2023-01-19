@@ -1,0 +1,18 @@
+.container {
+background-color: #F4F7F6;
+
+}
+
+.google-button {
+    /* background-color: #d0d0e3; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.google-button :hover {
+    background-color: #6a6cac;
+    box-shadow: 1px 5px 10px #6c6088;
+    color: rgb(149, 84, 84);
+    transform: translateY(-5px);
+    border-radius: 50%;
+}

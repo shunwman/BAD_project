@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div>
+            <form id="login-form">
+                <div>
+                    Login:
+                </div>
+                <label class="username">
+                    Username:
+                    <input type="text" name="username" placeholder="username" id="login-username" />
+                </label>
+
+
+                <label class="password">
+                    Password:
+                    <input type="password" name="password" placeholder="password" id="login-password" />
+                </label>
+                <!-- <input type="submit" value="Login" /> -->
+
+                <div class="loginBtn-container">
+                    
+                    <div class="google-button">
+                        <a href="/connect/google" class="btn btn-success">Sign in With Google</a>
+                    </div>
+
+                    <input type="submit" value="login" class="button" id="login-button">
+                </div>
+            </form>
+
+        </div>
+
+        <div>
+            <form id="register-form">
+                <div>Register new account:</div>
+
+                <label class="username">
+                    Username:
+                    <input type="text" name="registerUsername" placeholder="username" / id="register-username">
+                </label>
+
+                <label class="password">
+                    Password:
+                    <input type="password" name="registerPassword" placeholder="password" / id="register-password">
+                </label>
+
+                <div class="profile-picture">
+                    <label for="file" title="profile picture">Profile Picture:</label>
+                    <!-- <input type="file" name="userImage" placeholder="file" class="picture-button"> -->
+                </div>
+                <input type="file" value="Choose File" name="userImage" placeholder="file" class="button"
+                    id="userImage" />
+                <input type="submit" value="Register" class="register-button" />
+            </form>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="./login.js"></script>
+</body>
+
+
+</html>

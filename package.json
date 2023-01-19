@@ -1,0 +1,57 @@
+{
+  "name": "bad-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kin2217/BAD-Project.git"
+  },
+  "author": "Tony <kinlaw2217@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kin2217/BAD-Project/issues"
+  },
+  "homepage": "https://github.com/Kin2217/BAD-Project#readme",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/formidable": "^2.0.5",
+    "@types/jsonfile": "^6.1.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^18.8.4",
+    "@types/pg": "^8.6.5",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "formidable": "^2.0.1",
+    "grant": "^5.4.21",
+    "knex": "^2.3.0",
+    "pg": "^8.8.0",
+    "socket.io": "^4.5.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4",
+    "winston": "^3.8.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/express-session": "^1.17.5",
+    "@types/jest": "^29.1.2",
+    "jest": "^29.1.2",
+    "ts-jest": "^29.0.3",
+    "ts-node-dev": "^2.0.0"
+  },
+  "description": "1.yarn install\r 2.create a database called fungi\r 3.create the tables: \r     yarn knex migrate:latest\r 4.get seed data:\r     yarn knex seed:run",
+  "directories": {
+    "test": "test"
+  }
+}

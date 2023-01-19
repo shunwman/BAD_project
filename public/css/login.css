@@ -1,0 +1,158 @@
+body{
+background-image: url("627584.jpg");
+font-size: 20px;
+}
+
+.login-section {
+    
+    padding: 10px 10%;
+    align-self: center;
+    align-content: center;
+  }
+  
+.other-container{
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url(627584.jpg);
+    background-size: cover;
+}
+  .login-container {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background: rgb(255, 255, 255);
+    border: 5px solid darkgreen;
+    border-radius: 5%;
+
+  }
+  
+  .login-div {
+
+    margin: 3vh;
+    align-items: center;
+  }
+  
+  .login-div input {
+    width: 100%;
+    height: 4vh;
+    border: double 2px darkgreen;
+  }
+  
+  .login-button {
+    margin: 0 3vh;
+    width: 60%;
+    color: rgb(3, 3, 3);
+    background: #ffffff;
+    font-size: 1.1rem;
+    padding: 2vh 5vh;
+    font-weight: 500;
+    line-height: 0px;
+    border-radius: 30px;
+    transition: ease .40s;
+  }
+  
+  .login-button:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+    background: #2eca6a;
+  }
+  
+  .google-login-button p {
+    margin-top: 15px;
+  }
+  
+  .google-login-button {
+    
+    margin: 0 3vh;
+    color: rgb(3, 3, 3);
+    background: #ffffff;
+    font-size: 1.1rem;
+    width: 60%;
+    padding: 15px 10px;
+    font-weight: 500;
+    line-height: 0px;
+    border-radius: 30px;
+    transition: ease .40s;
+    align-items: center;
+  }
+  
+  .google-login-button:hover {
+    transform: scale(1.q);
+    transition: 0.2s;
+    background: rgba(0, 255, 98, 0.795);
+  }
+  
+  .button-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .register-in-the-login-page {
+    margin: 0 3vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .register-in-the-login-page a {
+    align-self: center;
+    align-content: center;
+  }
+  
+
+
+  /*--------------------------------------------------------------
+# Register
+--------------------------------------------------------------*/
+.register-section {
+    padding: 10px 10%;
+    align-self: center;
+    align-content: center;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background: #ffffff;
+    border: 5px solid darkgreen;
+    border-radius: 5%;
+  }
+  
+  .register-div {
+    margin: 3vh;
+    align-items: center;
+  }
+  
+  .register-div input{
+    width: 100%;
+    height: 4vh;
+    border: double 2px darkgreen;
+  }
+  
+  .register-button {
+    margin: 0 3vh;
+    color: rgb(3, 3, 3);
+    background: #ffffff;
+    font-size: 1.1rem;
+    width: 60%;
+    padding: 20px 10px;
+    font-weight: 500;
+    line-height: 0px;
+    border-radius: 30px;
+    transition: ease .40s;
+    align-items: center;
+  }
+  
+  .register-button:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+    background: #2eca6a;
+  }
+  
+  i {
+    font-size: 20px;
+  }
+ 

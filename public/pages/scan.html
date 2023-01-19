@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/scan.css">
+    <link rel="stylesheet" href="../css/assets.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <h1 class="page-header">Fungi Scanner</h1>
+
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:27;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:12;"></span>
+
+        </div>
+
+        <div class="main-container">
+
+            <div class="preview">
+                <img id="file-ip-1-preview">
+            </div>
+
+
+            <div class="info-container">
+            <div class="mushroom-info">
+                <p id="predict-class" class="mushroom-info">Prediction Mushroom :&nbsp</p>
+            <p id="predict-result" class="mushroom-info">aaaaaaaaaaa</p>
+            </div>
+            <div class = "mushroom-info">
+                <p id="mushroom-location" class="mushroom-info">Mushroom Location :&nbsp</p>
+
+            <p  id="mushroom-address" class="mushroom-info">22.2776807, 114.1558142</p>
+            
+            </div>
+            </div>
+
+            <div class="scan-inf">
+                <form id="fungi-contact-form" enctype="multipart/form-data">
+                    <label class="custom-input">
+                        <input type="file" name="fungiImg" onchange="showPreview(event);" />
+
+                        <img src="../img/upload-icon.png" class="upload-button">
+                        <p>upload image here</p>
+                    </label>
+                    <!--<input type="submit" value="Submit" class="button" id="fungi-popup" onclick="clickAlert()" />-->
+                    <input type="submit" value="Submit" class="button" id="fungi-popup" />
+                </form>
+            </div>
+
+
+            <div class="upload-inf mushroom-info">
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="submit" value="Upload" class="button" id="fungi-upload" />
+
+                </form>
+            </div>
+            <div class="more-info-div">
+                <!-- add after the checking-->
+            </div>
+
+            <!-- <button id="myBtn" class="button">Read more or update</button>-->
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-container">
+
+                    <span class="close">&times;</span>
+
+                    <div class="modal-content">
+
+                        <div class="more-update-info">
+                            <p class="modal-title">More information</p>
+
+                            <a href="fungi.html" class="change-page"><img src="../img/search-icon.png"
+                                    class="modal-icon"></a>
+
+                        </div>
+
+                        <!--<div class="more-update-info">
+                            <p class="modal-title">Update data</p>
+                            <button onclick="getlocation()" class="button" >Click me</button>
+                            <div id="location"></div>
+
+                        </div>-->
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <footer id="footer"></footer>
+    <script src="../js/common.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/scan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+/* 
+#DADBCB
+#A1B099
+#84745B
+#DCC69D
+#F8F4E9
+*/
+* {
+  
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#ffffff;
+  box-sizing: border-box;
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #5fcf85 3px solid;
+}
+
+
+.container {
+  margin-bottom: 10vh;
+  margin-top: 2vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: #ffffff solid 5px;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.fungi-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+}
+
+
+
+.info-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  /* height: 54px; */
+  justify-content: space-evenly;
+  border: darkgreen solid 2px;
+  border-radius: 20px;
+ }
+ 
+
+
+
+ .info-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin: 7px;
+  color: darkgreen;
+  font-weight: 900;
+  border-bottom: dotted 3px darkgreen
+ }
+
+.info-content {
+  font-size: 20px;
+  margin: 7px;
+
+}
+
+
+.fungi-map {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 95%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: max-content;
+  background-color: #618b6f;
+  margin: 5px;
+  /* padding: 5px; */
+  border: double;
+  align-self: center;
+}
+
+
+/* footer */
+
+footer {
+  height: 80px;
+  border-top: 3px solid #84745B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: #00ff84a6;
+}
+
+footer .footer-control {
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  color: white;
+}
+
+footer .footer-control.active {
+  color: #DCC69D;
+}
+
+footer .footer-control.active i {
+  color: #DCC69D;
+}
+
+footer .footer-control:hover {
+  color: #F8F4E9;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer .footer-control:hover i {
+  color: #F8F4E9;
+  cursor: pointer;
+}
+
+.footer-img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.row {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.image-content{
+  width: 100%;
+}
+
+
+/* Style the images inside the grid */
+.column-img {
+  display: flow-root;
+  width: 120px;
+  height: 110px;
+  float: left;
+  object-fit: cover;
+  padding: 2.5px;
+}
+
+.page-header{
+  padding: 2vh;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  background-color: darkgreen;
+
+}
+.edibilitySource{
+  font-size: 14px;
+}
+
+
+#map {
+
+  width: 80vw; 
+  height: 65vh; 
+  margin:0px auto; 
+}
+
+.location-name{
+  font-size: 20px;
+  font-weight: 500;
+}
